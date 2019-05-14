@@ -205,6 +205,10 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
+		p.smallmargin {
+			margin: 0 0 1em 0 !important;
+		}
+		
 		p.content {
 			-moz-columns: 20em 2;
 			-webkit-columns: 20em 2;
@@ -2439,6 +2443,10 @@ input, select, textarea {
 
 	ol.lnomargin, ul.lnomargin {
 		margin: 0 !important;
+	}
+	
+	ol.lsmallmargin, ul.lsmallmargin {
+		margin: 0 0 1em 0 !important;
 	}
 
 	ul {

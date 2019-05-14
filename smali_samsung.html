@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Stellar by HTML5 UP</title>
+		<title>Samsung Root [Smali Patcher]</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -64,8 +64,8 @@
 										<h3>Flash TWRP and install Magisk</h3>
 										<ol>
 											<li>Enable developer options<br/>
-											(Settings -> About Device -> Software Info -> Tap 7x on 'Build Number')</li>
-											<li>Now go to Settings -> Developer options.<br/>
+											Go to <i class="fas fa-cog"></i> Settings &raquo; About Device &raquo; Software Info and tap 7x on 'Build Number'</li>
+											<li>Now go to <i class="fas fa-cog"></i> Settings &raquo; Developer options.<br/>
 											You need to enable [Enable OEM unlock] and [USB Debugging].<br/>
 											(Can't find OEM Unlock? No problem, proceed)</li>
 											<li>Reboot your device into Download mode.<br/>
@@ -78,7 +78,7 @@
 											<li>You will reach a screen asking you if you want to allow system modifications.<br/>
 											Swipe to the right.</li>
 											<li><span class="bolded">** DO NOT EXIT TWRP AFTER THIS STEP, GO TO MAIN MENU AGAIN **</span><br/>
-											Go to [Wipe] -> [Format Data] -> and type 'yes' as instructed and go back to the main menu.</li>
+											Go to [Wipe] &raquo; [Format Data] and type 'yes' as instructed and go back to the main menu.</li>
 											<li>Without exiting TWRP, transfer the Magisk zipfile to your device</li>
 											<li>Flash the Magisk-zip using [Install] in TWRP.</li>
 											<li>Reboot to system once the zip is installed. </li><br/>
@@ -87,10 +87,19 @@
 											If not, download the [Magisk Manager] apk.<br/>
 											<a href="https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445" target="blank">Download from xda-developers</a></li>
 											<li>Hide the Magisk manager.
-											Open [Magisk Manager] go to [Settings] -> [Hide Magisk Manager].<br/>
-											Wait a minute or 2 and [Magisk Manager] will re-open and it's called [Manager] now.</li>
+											<ul class="lnomargin"><li>Open Magisk Manager and tap on <i class="fas fa-bars"></i> the menu.</li>
+												<li>Go to <i class="fas fa-cog"></i> Settings</li>
+												<li>Tap Hide Magisk Manager</li>
+												<li>Magisk Manager should close in order to change the package name (to Manager).</li>
+												<li>You can check if it was sucessful by repeating the same steps and checking if now instead of Hide Magisk Manager it says Restore Magisk Manager.</li>
+											</ul></li>
 											<li>Hide Magisk for Pokemon GO<br/>
-											Open [Magisk Manager] go to [Magisk Hide] -> Check [Pokemon GO]<br/></li>
+											<ul class="lnomargin"><li>Open Magisk Manager and tap on <i class="fas fa-bars"></i> the menu.</li>
+												<li>Go to Magisk Hide</li>
+												<li>There you will find a list of your installed apps.</li>
+												<li>Check the square next to Pokemon GO. <i class="far fa-check-square"></i></li>
+												<li>That's it. Pokemon GO shouldn't detect root (Magisk) anymore.</li>
+											</ul></li>
 										</ol>
 										
 										<h3>Smali Patcher to mock location</h3>
@@ -106,13 +115,34 @@
 										</ol>
 
 										<h3>Install GPS Joystick</h3>
-										<span class="bolded">In progress..</span>
 										<ol>
-											<li>Download GPS Joystick from App Ninjas - check architecture with CPU-Z</li>
-											<li>Privacy mode - create new</li>
-											<li>Set location to device only</li>
-											<li>Disable High Accuracy</li>
-											<li>Set mock location app</li>
+											<li>Download GPS Joystick from the App Ninjas
+												<ul class="lnomargin">
+													<li>Go to <a href="http://gpsjoystick.theappninjas.com/faq/" target="_blank">the App Ninjas website</a>.</li>
+													<li>Select the APK for your device's architecture.<br/>To figure out your architecture download CPU-Z from the playstore.
+													<li>Install it</li>
+												</ul>
+											</li>
+											<li>Open the GPS Joystick app</li>
+											<li>Tap on [Privacy Mode] &raquo; Generate and give it a name.</li>
+											<li>Confirm that your new app is created an delete the old one (GPS Joystick).</li>
+											<li>Now open your device's <i class="fas fa-cog"></i> Settings &raquo; Developer options.<br/>
+											You need to set your app in [Set mock location app].</li>
+											<li>Go back to <i class="fas fa-cog"></i> Settings.</li>
+											<li>Tap Connections &raquo; Location
+												<ul class="lnomargin">
+													<li>Locating method &raquo; [Device Only]</li>
+													<li>Improve accuracy &raquo; Disable all</li>
+													<li>Google Location History &raquo; Disable (pause)</li>
+												</ul>
+											</li>
+											<li>Disable [Find My Phone] (you can search for 'Find' in settings.)</li>
+											<li>Now open your previously renamed GPS Joystick app.</li>
+											<ul class="lnomargin"><li>Tap on <i class="fas fa-bars"></i> the menu.</li>
+												<li>Go to <i class="fas fa-cog"></i> Settings.</li>
+												<li>Disable [Enable Indirect Mocking]</li>
+											</ul>
+											<li>That's it. You're finished and ready to spoof.</li>
 										</ol>
 									</div>
 								</div>

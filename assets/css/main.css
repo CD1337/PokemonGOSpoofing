@@ -2437,12 +2437,16 @@ input, select, textarea {
 			padding-left: 0.25em;
 		}
 
+	ol.lnomargin, ul.lnomargin {
+		margin: 0 !important;
+	}
+
 	ul {
 		list-style: disc;
 		margin: 0 0 2em 0;
 		padding-left: 1em;
 	}
-
+		
 		ul li {
 			padding-left: 0.5em;
 		}

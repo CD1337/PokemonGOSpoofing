@@ -2605,7 +2605,7 @@ input, select, textarea {
 					-webkit-flex-shrink: 1;
 					-ms-flex-shrink: 1;
 					flex-shrink: 1;
-					padding: 1em 0 0 0;
+					padding: 1em 0 0 0 !important;
 					text-align: center;
 					width: 100%;
 				}
@@ -2615,7 +2615,7 @@ input, select, textarea {
 					}
 
 					ul.actions:not(.fixed) li:first-child {
-						padding-top: 0;
+						padding-top: 0 !important;
 					}
 
 					ul.actions:not(.fixed) li input[type="submit"],
@@ -2840,7 +2840,7 @@ input, select, textarea {
 			text-align: center;
 		}
 			.features ul.uloptions2 > li {
-			padding: 0px !important;
+			padding: 0px;
 			margin: 0px !important;
 			width: 100%;
 		}
